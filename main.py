@@ -61,7 +61,7 @@ def main():
     n_of_rows = args.n_of_rows[args.n_of_rows.find("=")+1:len(args.n_of_rows)]
 
     start = datetime.now()
-    print(start, f'getting config from {config}')
+    print(start, f'getting config from {config} ')
     print(start, f'dumping SQL to {target}finalSQL.sql.gz')
     print(start, f'generating {n_of_rows} rows')
     

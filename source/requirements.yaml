@@ -6,7 +6,7 @@ tables:
     timestamp: 25
     integer: 25
     decimal: 25
-    varchar: 25
+    varchar: 30
     inet: 5
     macaddr: 10
   table2:

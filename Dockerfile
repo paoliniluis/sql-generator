@@ -14,7 +14,7 @@ ADD main.py requirements.txt source/requirements.yaml ./
 RUN pip install -r requirements.txt && python3 main.py config=$config target=$target n_of_rows=$n_of_rows
 
 # ###################
-# # STAGE 2: export-stage
+# # STAGE 2: export-stage 
 # ###################
 
 FROM scratch as export-stage
