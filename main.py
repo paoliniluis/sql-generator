@@ -37,7 +37,9 @@ def generateValue(fieldType:str) -> any:
     if fieldType == 'boolean':
         return f"{generic.development.boolean()}"
     if fieldType == 'varchar':
-        return f"'{generic.text.text(5).replace(chr(39),'').replace(chr(44),'').replace(chr(34),'')}'"
+        return f"'{generic.food.fruit().replace(chr(39),'').replace(chr(44),'').replace(chr(34),'')}'"
+    if fieldType == 'text':
+        return f"'{generic.text.text(3).replace(chr(39),'').replace(chr(44),'').replace(chr(34),'')}'"
     if fieldType == 'date':
         return f"'{generic.datetime.date()}'"
     if fieldType == 'timestamp':
@@ -46,6 +48,10 @@ def generateValue(fieldType:str) -> any:
         return random.randint(-2147483648,2147483647)
     if fieldType == 'decimal':
         return random.random()*100
+    if fieldType == 'inet':
+        return f"'{generic.internet.ip_v4()}'"
+    if fieldType == 'macaddr':
+        return f"'{generic.internet.mac_address()}'"
     if fieldType == None:
         return ""
 

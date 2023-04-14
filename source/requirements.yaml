@@ -1,13 +1,17 @@
 tables:
   table1:
     boolean: 25
-    varchar: 25
+    text: 5
     date: 25
     timestamp: 25
     integer: 25
     decimal: 25
+    varchar: 25
+    inet: 5
+    macaddr: 10
   table2:
-    varchar: 3
+    text: 3
     date: 2
     integer: 4
     boolean: 2
+    varchar: 10

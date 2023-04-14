@@ -3,7 +3,16 @@ SQL Generator
 
 # Quick start
 You don't need to have Python installed, just Docker
+```
 DOCKER_BUILDKIT=1 docker build --build-arg n_of_rows=1000 --output=target/ .
+```
+
+or straight from the console
+```
+python3 main.py source=source/requirements.yaml target=target/ n_of_rows=1000
+```
+
+You'll end up with a finalSQL.sql.gz file on your target/ subdirectory ready to be imported into PostgreSQL as the initialization file :)
 
 ## Arguments
 - source: the specification of what you want to build
